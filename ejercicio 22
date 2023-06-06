@@ -1,37 +1,31 @@
 from collections import deque
 
 def procesar_cola(cola):
-    # a. determinar el nombre del personaje de la superhéroe Capitana Marvel
     for personaje in cola:
         if personaje[1] == 'Capitana Marvel':
             print(f'El nombre del personaje de Capitana Marvel es {personaje[0]}')
             break
 
-    # b. mostrar los nombres de los superhéroes femeninos
     print('Superhéroes femeninos:')
     for personaje in cola:
         if personaje[2] == 'F':
             print(personaje[1])
 
-    # c. mostrar los nombres de los personajes masculinos
     print('Personajes masculinos:')
     for personaje in cola:
         if personaje[2] == 'M':
             print(personaje[0])
 
-    # d. determinar el nombre del superhéroe del personaje Scott Lang
     for personaje in cola:
         if personaje[0] == 'Scott Lang':
             print(f'El nombre del superhéroe de Scott Lang es {personaje[1]}')
             break
 
-    # e. mostrar todos los datos de los superhéroes o personajes cuyos nombres comienzan con la letra S
     print('Superhéroes o personajes cuyos nombres comienzan con la letra S:')
     for personaje in cola:
         if personaje[0][0] == 'S' or personaje[1][0] == 'S':
             print(personaje)
 
-    # f. determinar si el personaje Carol Danvers se encuentra en la cola e indicar su nombre de superhéroes
     for personaje in cola:
         if personaje[0] == 'Carol Danvers':
             print(f'Carol Danvers se encuentra en la cola y su nombre de superhéroe es {personaje[1]}')
